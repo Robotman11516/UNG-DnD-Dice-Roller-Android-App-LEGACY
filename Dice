@@ -1,4 +1,4 @@
-package com.zybooks.diceroller;
+package com.ung.dndDiceRollerApp;
 
 import java.util.Random;
 
