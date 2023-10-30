@@ -1,4 +1,4 @@
-package com.zybooks.diceroller;
+package com.ung.dndDiceRollerApp;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
-public class MainActivity extends AppCompatActivity implements RollLengthDialogFragment.OnRollLengthSelectedListener {
+public class MainActivity extends AppCompatActivity implements DialogRollLength.OnRollLengthSelectedListener {
 
     public static final int MAX_DICE = 3;
 
