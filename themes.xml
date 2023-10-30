@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.DiceRoller" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.DnDDiceRollerApp" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/blue_500</item>
         <item name="colorPrimaryDark">@color/blue_700</item>
     </style>
