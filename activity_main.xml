@@ -9,31 +9,124 @@
     android:layout_height="match_parent"
     tools:context="com.ung.dndDiceRollerApp.MainActivity">
 
-    <ImageView
-        android:id="@+id/dice1"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/dice_one"
-        android:src="@drawable/dice_1"
-        app:tint="@color/red_900" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/dice2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/dice_one"
-        android:src="@drawable/dice_1"
-        app:tint="@color/red_900" />
+        <ImageView
+            android:id="@+id/d4Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d4"
+            android:src="@drawable/d4" />
 
-    <ImageView
-        android:id="@+id/dice3"
+        <TextView
+            android:id="@+id/d4Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/dice_one"
-        android:src="@drawable/dice_1"
-        app:tint="@color/red_900" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/d6Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d6"
+            android:src="@drawable/d6" />
+
+        <TextView
+            android:id="@+id/d6Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/d8Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d8"
+            android:src="@drawable/d8" />
+
+        <TextView
+            android:id="@+id/d8Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/d10Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d10"
+            android:src="@drawable/d10" />
+
+        <TextView
+            android:id="@+id/d10Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/d12Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d12"
+            android:src="@drawable/d12" />
+
+        <TextView
+            android:id="@+id/d12Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/d20Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="d20"
+            android:src="@drawable/d20" />
+
+        <TextView
+            android:id="@+id/d20Text"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </FrameLayout>
 
 </LinearLayout>
