@@ -10,7 +10,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -28,12 +31,19 @@ public class MainActivity extends AppCompatActivity implements DialogRollLength.
     private Menu mMenu;
     private CountDownTimer mTimer;
     private GestureDetectorCompat mDetector;
+    private TextView mD4TextView;
+    private TextView mD6TextView;
+    private TextView mD8TextView;
+    private TextView mD10TextView;
+    private TextView mD12TextView;
+    private TextView mD20TextView;
     private long mTimerLength = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mD6TextView = findViewById(R.id.d6Text);
 
         // Create an array of Dice
         mDice = new Dice[MAX_DICE];
@@ -42,13 +52,14 @@ public class MainActivity extends AppCompatActivity implements DialogRollLength.
         }
 
         // Create an array of ImageViews
-        mDiceImageViews = new ImageView[MAX_DICE];
-        mDiceImageViews[0] = findViewById(R.id.dice1);
-        mDiceImageViews[1] = findViewById(R.id.dice2);
-        mDiceImageViews[2] = findViewById(R.id.dice3);
+        // to be replaced by the code matthew found
+        //mDiceImageViews = new ImageView[MAX_DICE];
+        //mDiceImageViews[0] = findViewById(R.id.dice1);
+        //mDiceImageViews[1] = findViewById(R.id.dice2);
+        //mDiceImageViews[2] = findViewById(R.id.dice3);
 
         // All dice are initially visible
-        mVisibleDice = MAX_DICE;
+        //mVisibleDice = MAX_DICE;
 
         showDice();
 
@@ -160,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements DialogRollLength.
             return true;
         }
         else if (item.getItemId() == R.id.action_roll_length) {
-            RollLengthDialogFragment dialog = new RollLengthDialogFragment();
+            DialogRollLength dialog = new DialogRollLength();
             dialog.show(getSupportFragmentManager(), "rollLengthDialog");
             return true;
         }
