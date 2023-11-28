@@ -9,6 +9,14 @@
     <string name="add_one">Add one</string>
     <string name="subtract_one">Subtract one</string>
     <string name="roll">Roll</string>
+    <string name="action_d4">D4</string>
+    <string name="action_d6">D4</string>
+    <string name="action_d8">D4</string>
+    <string name="action_d10">D4</string>
+    <string name="action_d12">D4</string>
+    <string name="action_d20">D4</string>
+
+
 
     <!-- Dialog title -->
     <string name="pick_roll_length">Roll length?</string>
