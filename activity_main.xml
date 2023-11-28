@@ -10,8 +10,9 @@
 
     <!--D4 Frame-->
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d4Image"
@@ -31,8 +32,9 @@
 
     <!--D6 Frame-->
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d6Image"
@@ -52,8 +54,9 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d8Image"
@@ -72,8 +75,9 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d10Image"
@@ -92,8 +96,9 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d12Image"
@@ -112,8 +117,9 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/d20Image"
