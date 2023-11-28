@@ -4,22 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ung.dndDiceRollerApp.MainActivity">
 
+    <!--D4 Frame-->
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d4Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d4"
-            android:src="@drawable/d4" />
+            android:src="@drawable/d4"
+            app:tint="@color/red_900" />
 
         <TextView
             android:id="@+id/d4Text"
@@ -29,17 +29,19 @@
             android:gravity="center"/>
     </FrameLayout>
 
+    <!--D6 Frame-->
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d6Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d6"
-            android:src="@drawable/d6" />
+            android:src="@drawable/d6"
+            app:tint="@color/red_900" />
+
 
         <TextView
             android:id="@+id/d6Text"
@@ -50,16 +52,16 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d8Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d8"
-            android:src="@drawable/d8" />
+            android:src="@drawable/d8"
+            app:tint="@color/red_900" />
 
         <TextView
             android:id="@+id/d8Text"
@@ -70,16 +72,16 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d10Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d10"
-            android:src="@drawable/d10" />
+            android:src="@drawable/d10"
+            app:tint="@color/red_900" />
 
         <TextView
             android:id="@+id/d10Text"
@@ -90,16 +92,16 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d12Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d12"
-            android:src="@drawable/d12" />
+            android:src="@drawable/d12"
+            app:tint="@color/red_900" />
 
         <TextView
             android:id="@+id/d12Text"
@@ -110,16 +112,16 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="100dp"
+        android:layout_height="100dp">
 
         <ImageView
             android:id="@+id/d20Image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:contentDescription="d20"
-            android:src="@drawable/d20" />
+            android:src="@drawable/d20"
+            app:tint="@color/red_900" />
 
         <TextView
             android:id="@+id/d20Text"
