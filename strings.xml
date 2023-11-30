@@ -15,16 +15,3 @@
     <string name="action_d10">D4</string>
     <string name="action_d12">D4</string>
     <string name="action_d20">D4</string>
-
-
-
-    <!-- Dialog title -->
-    <string name="pick_roll_length">Roll length?</string>
-
-    <!-- Dialog list options -->
-    <string-array name="length_array">
-        <item>Short</item>
-        <item>Medium</item>
-        <item>Long</item>
-    </string-array>
-</resources>
