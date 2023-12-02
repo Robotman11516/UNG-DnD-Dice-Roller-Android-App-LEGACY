@@ -1,0 +1,19 @@
+        add into oncreate method
+        int randomD4 = new Random().nextInt(4) + 1;
+        int randomD6 = new Random().nextInt(6) + 1;
+        int randomD8 = new Random().nextInt(8) + 1;
+        int randomD10 = new Random().nextInt(10) + 1;
+        int randomD12 = new Random().nextInt(12) + 1;
+        int randomD20 = new Random().nextInt(20) + 1;
+        TextView d4Text = findViewById(R.id.d4Image);
+        TextView d6Text = findViewById(R.id.d6Image);
+        TextView d8Text = findViewById(R.id.d8Image);
+        TextView d10Text = findViewById(R.id.d10Image);
+        TextView d12Text = findViewById(R.id.d12Image);
+        TextView d20Text = findViewById(R.id.d20Image);
+        d4Text.setText(String.valueOf(randomD4));
+        d6Text.setText(String.valueOf(randomD6));
+        d8Text.setText(String.valueOf(randomD8));
+        d10Text.setText(String.valueOf(randomD10));
+        d12Text.setText(String.valueOf(randomD12));
+        d20Text.setText(String.valueOf(randomD20));
