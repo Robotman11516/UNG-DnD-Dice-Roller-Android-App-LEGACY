@@ -12,21 +12,34 @@
         android:visible="false"
         app:showAsAction="ifRoom"/>
 
+
     <item android:id="@+id/action_roll"
         android:title="@string/action_roll"
         android:icon="@drawable/roll"
         app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/action_one"
-        android:title="@string/action_one"
+    <item android:id="@+id/action_D4"
+        android:title="@string/action_d4"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_two"
-        android:title="@string/action_two"
+    <item android:id="@+id/action_D6"
+        android:title="@string/action_d6"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_three"
-        android:title="@string/action_three"
+    <item android:id="@+id/action_D8"
+        android:title="@string/action_d8"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_D10"
+        android:title="@string/action_d10"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_D12"
+        android:title="@string/action_d12"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_D20"
+        android:title="@string/action_d20"
         app:showAsAction="never"/>
 
 </menu>
