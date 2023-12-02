@@ -1,7 +1,5 @@
 package com.ung.dndDiceRollerApp;
 
-import android.widget.TextView;
-
 import java.util.Random;
 
 public class Dice {
@@ -10,12 +8,14 @@ public class Dice {
     public static int SMALLEST_NUM = 1;
     private int mNumber = SMALLEST_NUM;
     private int mImageId;
-    private Random mRandomGenerator;
+    public boolean visabiliy;
+    private final Random mRandomGenerator;
 
     public Dice(int number) {
         setImageId(number);
         setNumber(1);
         mRandomGenerator = new Random();
+        visabiliy = true;
     }
 
     public int getNumber() {
