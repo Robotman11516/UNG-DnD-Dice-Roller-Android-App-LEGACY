@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         mDiceImageViews[3] = findViewById(R.id.d10Image);
         mDiceImageViews[4] = findViewById(R.id.d12Image);
         mDiceImageViews[5] = findViewById(R.id.d20Image);
+        for (int i = 0; i < MAX_DICE; i++){
+            mDiceImageViews[i].setVisibility(View.GONE);
+        }
 
         //Array of TextViews
         mDiceTextViews = new TextView[MAX_DICE];
@@ -51,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         mDiceTextViews[3] = findViewById(R.id.d10Text);
         mDiceTextViews[4] = findViewById(R.id.d12Text);
         mDiceTextViews[5] = findViewById(R.id.d20Text);
+        for (int i = 0; i < MAX_DICE; i++){
+            mDiceTextViews[i].setVisibility(View.GONE);
+        }
 
 
 
@@ -132,4 +138,8 @@ public class MainActivity extends AppCompatActivity {
             mDice[die].visabiliy = true;
         }
     }
+
+
+
+
 }
