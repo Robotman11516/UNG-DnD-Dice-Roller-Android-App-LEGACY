@@ -6,13 +6,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ung.dndDiceRollerApp.MainActivity">
+    android:background="@color/tawny_orange"
+    tools:context="com.zybooks.dnddicerollerapp.MainActivity">
 
     <!--D4 Frame-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d4Image"
@@ -24,17 +26,19 @@
 
         <TextView
             android:id="@+id/d4Text"
-            android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="4"
+            android:textSize="40sp" />
     </FrameLayout>
 
     <!--D6 Frame-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d6Image"
@@ -47,7 +51,8 @@
 
         <TextView
             android:id="@+id/d6Text"
-            android:text="1"
+            android:text="6"
+            android:textSize="40sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"/>
@@ -56,7 +61,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d8Image"
@@ -68,16 +74,18 @@
 
         <TextView
             android:id="@+id/d8Text"
-            android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"/>
+            android:gravity="bottom|center"
+            android:text="8"
+            android:textSize="40sp" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d10Image"
@@ -89,16 +97,18 @@
 
         <TextView
             android:id="@+id/d10Text"
-            android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"/>
+            android:gravity="bottom|center"
+            android:text="01"
+            android:textSize="40sp" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d12Image"
@@ -110,16 +120,18 @@
 
         <TextView
             android:id="@+id/d12Text"
-            android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"/>
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="12"
+            android:textSize="40sp" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/d20Image"
@@ -131,10 +143,11 @@
 
         <TextView
             android:id="@+id/d20Text"
-            android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"/>
+            android:gravity="center|top|center_vertical"
+            android:text="20"
+            android:textSize="40sp" />
     </FrameLayout>
 
 </LinearLayout>
