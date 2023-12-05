@@ -4,4 +4,7 @@
     <color name="blue_700">#303F9F</color>
     <color name="red_900">#D50000</color>
     <color name="tawny_orange">#9B4422</color>
+    <color name="user_green">#009900</color>
+    <color name="user_purple">#660066</color>
+    <color name="user_blue">#5577FF</color>
 </resources>

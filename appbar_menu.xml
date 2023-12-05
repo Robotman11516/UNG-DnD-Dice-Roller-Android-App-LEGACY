@@ -1,10 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/action_roll_length"
-        android:title="@string/action_roll"
-        android:icon="@drawable/timer"
-        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_stop"
         android:title="@string/action_stop"
@@ -18,27 +14,33 @@
         android:icon="@drawable/roll"
         app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/action_D4"
+    <Button
+        android:id="@+id/change_color_button"
+        android:onClick="onChangeColorClick"
+        android:layout_height="10dp"
+        android:layout_width="10dp"/>
+
+    <item android:id="@+id/action_d4"
         android:title="@string/action_d4"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_D6"
+    <item android:id="@+id/action_d6"
         android:title="@string/action_d6"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_D8"
+    <item android:id="@+id/action_d8"
         android:title="@string/action_d8"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_D10"
+    <item android:id="@+id/action_d10"
         android:title="@string/action_d10"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_D12"
+    <item android:id="@+id/action_d12"
         android:title="@string/action_d12"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_D20"
+    <item android:id="@+id/action_d20"
         android:title="@string/action_d20"
         app:showAsAction="never"/>
 
