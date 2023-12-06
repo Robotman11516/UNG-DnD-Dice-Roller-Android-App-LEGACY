@@ -44,4 +44,16 @@
         android:title="@string/action_d20"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/user_green"
+        android:title="@string/user_green"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/user_blue"
+        android:title="@string/user_blue"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/user_purple"
+        android:title="@string/user_purple"
+        app:showAsAction="never"/>
+
 </menu>
