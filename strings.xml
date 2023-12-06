@@ -15,8 +15,6 @@
     <string name="action_d10">D10</string>
     <string name="action_d12">D12</string>
     <string name="action_d20">D20</string>
-    <string name="color_button">Change Dice Color</string>
-    <string name="choose_color">Choose a color</string>
     <string name="user_green">Green</string>
     <string name="user_purple">Purple</string>
     <string name="user_blue">Blue</string>
