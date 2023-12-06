@@ -1,10 +1,14 @@
 package com.ung.dndDiceRollerApp;
 
+import java.util.Random;
+
+import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -51,14 +55,70 @@ public class MainActivity extends AppCompatActivity {
         mDiceTextViews[3] = findViewById(R.id.d10Text);
         mDiceTextViews[4] = findViewById(R.id.d12Text);
         mDiceTextViews[5] = findViewById(R.id.d20Text);
-
-
-
         // All dice are initially visible
         mVisibleDice = MAX_DICE;
-
         showDice();
 
+        final FrameLayout d4 = findViewById(R.id.d4frame);
+        d4.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD4 = new Random().nextInt(4) + 1;
+                mDiceTextViews[0] = findViewById(R.id.d4Text);
+                mDiceTextViews[0].setText(String.valueOf(randomD4));
+            }
+        });
+        final FrameLayout d6 = findViewById(R.id.d6frame);
+        d6.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD6 = new Random().nextInt(6) + 1;
+                mDiceTextViews[1] = findViewById(R.id.d6Text);
+                mDiceTextViews[1].setText(String.valueOf(randomD6));
+            }
+        });
+        final FrameLayout d8 = findViewById(R.id.d8frame);
+        d8.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD8 = new Random().nextInt(8) + 1;
+                mDiceTextViews[2] = findViewById(R.id.d8Text);
+                mDiceTextViews[2].setText(String.valueOf(randomD8));
+            }
+        });
+        final FrameLayout d10 = findViewById(R.id.d10frame);
+        d10.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD10 = new Random().nextInt(10) + 1;
+                mDiceTextViews[3] = findViewById(R.id.d10Text);
+                mDiceTextViews[3].setText(String.valueOf(randomD10));
+            }
+        });
+        final FrameLayout d12 = findViewById(R.id.d12frame);
+        d12.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD12 = new Random().nextInt(12) + 1;
+                mDiceTextViews[4] = findViewById(R.id.d12Text);
+                mDiceTextViews[4].setText(String.valueOf(randomD12));
+            }
+        });
+        final FrameLayout d20 = findViewById(R.id.d20frame);
+        d20.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD20 = new Random().nextInt(20) + 1;
+                mDiceTextViews[5] = findViewById(R.id.d20Text);
+                mDiceTextViews[5].setText(String.valueOf(randomD20));
+            }
+        });
 
     }
 
