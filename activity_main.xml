@@ -11,6 +11,7 @@
 
     <!--D4 Frame-->
     <FrameLayout
+        android:id="@+id/d4frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -35,6 +36,7 @@
 
     <!--D6 Frame-->
     <FrameLayout
+        android:id="@+id/d6frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -59,6 +61,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/d8frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -82,6 +85,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/d10frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -105,6 +109,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/d12frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -128,6 +133,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/d20frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
