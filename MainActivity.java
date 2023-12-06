@@ -1,20 +1,16 @@
 package com.ung.dndDiceRollerApp;
 
-import android.app.Activity;
-import android.content.Intent;
+import java.util.Random;
+
+import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -28,15 +24,12 @@ public class MainActivity extends AppCompatActivity {
     private ImageView[] mDiceImageViews;
     private TextView[] mDiceTextViews;
 
-    private int mLightOnColorId;
-    private CountDownTimer mTimer;
+    //private int diceColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mLightOnColorId = R.color.red_900;
 
         // Create an array of Dice
         mDice = new Dice[MAX_DICE];
@@ -64,14 +57,70 @@ public class MainActivity extends AppCompatActivity {
         mDiceTextViews[3] = findViewById(R.id.d10Text);
         mDiceTextViews[4] = findViewById(R.id.d12Text);
         mDiceTextViews[5] = findViewById(R.id.d20Text);
-
-
-
         // All dice are initially visible
         mVisibleDice = MAX_DICE;
-
         showDice();
 
+        final FrameLayout d4 = findViewById(R.id.d4frame);
+        d4.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD4 = new Random().nextInt(4) + 1;
+                mDiceTextViews[0] = findViewById(R.id.d4Text);
+                mDiceTextViews[1].setText(String.valueOf(randomD4));
+            }
+        });
+        final FrameLayout d6 = findViewById(R.id.d6frame);
+        d6.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD6 = new Random().nextInt(6) + 1;
+                mDiceTextViews[1] = findViewById(R.id.d6Text);
+                mDiceTextViews[1].setText(String.valueOf(randomD6));
+            }
+        });
+        final FrameLayout d8 = findViewById(R.id.d8frame);
+        d8.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD8 = new Random().nextInt(8) + 1;
+                mDiceTextViews[2] = findViewById(R.id.d8Text);
+                mDiceTextViews[2].setText(String.valueOf(randomD8));
+            }
+        });
+        final FrameLayout d10 = findViewById(R.id.d10frame);
+        d10.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD10 = new Random().nextInt(10) + 1;
+                mDiceTextViews[3] = findViewById(R.id.d10Text);
+                mDiceTextViews[3].setText(String.valueOf(randomD10));
+            }
+        });
+        final FrameLayout d12 = findViewById(R.id.d12frame);
+        d12.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD12 = new Random().nextInt(12) + 1;
+                mDiceTextViews[4] = findViewById(R.id.d12Text);
+                mDiceTextViews[4].setText(String.valueOf(randomD12));
+            }
+        });
+        final FrameLayout d20 = findViewById(R.id.d20frame);
+        d20.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongViewCast")
+            @Override
+            public void onClick(View v) {
+                int randomD20 = new Random().nextInt(20) + 1;
+                mDiceTextViews[5] = findViewById(R.id.d20Text);
+                mDiceTextViews[5].setText(String.valueOf(randomD20));
+            }
+        });
 
     }
 
@@ -94,7 +143,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
 
         // Determine which menu option was chosen
         if (item.getItemId() == R.id.action_d4) {
@@ -127,7 +175,24 @@ public class MainActivity extends AppCompatActivity {
             showDice();
             return true;
         }
+        
+        else if (item.getItemId() == R.id.user_green) {
+            for (int i = 0; i < 6; i++) {
+                mDiceImageViews[i].setColorFilter(getColor(R.color.user_green));
+            }
+        }
 
+        else if (item.getItemId() == R.id.user_blue) {
+            for (int i = 0; i < 6; i++) {
+                mDiceImageViews[i].setColorFilter(getColor(R.color.user_blue));
+            }
+        }
+
+        else if (item.getItemId() == R.id.user_purple) {
+            for (int i = 0; i < 6; i++) {
+                mDiceImageViews[i].setColorFilter(getColor(R.color.user_purple));
+            }
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -147,33 +212,12 @@ public class MainActivity extends AppCompatActivity {
             mDice[die].visabiliy = true;
         }
     }
-
-    public void onChangeColorClick(View view) {
-        Intent intent = new Intent(this, ColorActivity.class);
-        intent.putExtra(ColorActivity.EXTRA_COLOR, mLightOnColorId);
-        mColorResultLauncher.launch(intent);
-    }
-
-    ActivityResultLauncher<Intent> mColorResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        Intent data = result.getData();
-                        if (data != null) {
-                            mLightOnColorId = data.getIntExtra(ColorActivity.EXTRA_COLOR, R.color.red_900);
-                            int mLightOnColor = ContextCompat.getColor(MainActivity.this, mLightOnColorId);
-                            //setButtonColors();
-                        }
-                    }
-                }
-
-                /*private void setButtonColors() {
-                }*/
-            });
-
-
+    
 
 }
+
+
+
+
+
 
